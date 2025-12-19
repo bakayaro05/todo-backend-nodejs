@@ -1,0 +1,48 @@
+### GET/ endpoint to check if website loads
+
+GET http://localhost:
+
+
+### Register a new user endpoint(/auth /register)
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "gilgamesh@gmail.com",
+    "password" : "1234567"
+}
+
+### Login a user  /auth /login 
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username" : "gilgamesh@gmail.com",
+    "password" : "1234567"
+}
+
+### Fetch all todos  GET/TODOS (protected)
+GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY1ODgyNDk0LCJleHAiOjE3NjU5Njg4OTR9.MYeYFutx-ol3y-GCTdGptozET6uJh5n3kkZO7mhFPts
+### ADD NEW TODO POST/TODOS
+POST http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY1ODgyNDk0LCJleHAiOjE3NjU5Njg4OTR9.MYeYFutx-ol3y-GCTdGptozET6uJh5n3kkZO7mhFPts
+Content-Type: application/json
+
+{
+"task" : "Finish Coding Projects"
+}
+
+### Update a todo  PUT/TODOS/:id here i am modifying 2nd entry for showcase
+PUT http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY1ODgyNDk0LCJleHAiOjE3NjU5Njg4OTR9.MYeYFutx-ol3y-GCTdGptozET6uJh5n3kkZO7mhFPts
+Content-Type: application/json
+
+{
+"completed" : 1
+}
+
+###Delete a todo 
+DELETE http://localhost:5000/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzY1ODgyNDk0LCJleHAiOjE3NjU5Njg4OTR9.MYeYFutx-ol3y-GCTdGptozET6uJh5n3kkZO7mhFPts
