@@ -18,3 +18,15 @@ This project helped me understand how backend systems work and how to reason abo
 - Create, read, update, delete (CRUD) todos
 - RESTful API using GET / POST routes
 - Database interaction via Prisma
+
+- ## Credits
+
+This project was built while following the  
+**Backend Full Course by Smoljames**.
+
+- 📺 YouTube: Backend Full Course – Node.js, Express, Prisma & Docker  
+   https://www.youtube.com/watch?v=9BD9eK9VqXA
+
+- 💻 GitHub: Smoljames Backend Course Repository  
+  https://github.com/jamezmca/backend-full-course
+
